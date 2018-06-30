@@ -17,7 +17,7 @@ void loop() {
   analogvalue = analogRead(temp_sensor);
   temperature = float(analogvalue) / 1023;
   temperature = temperature * 500;
-  serial.println(temprature);
+  Serial.println(temprature);
   delay(3000);
 }
 void blink() {
@@ -25,7 +25,7 @@ void blink() {
   digitalWrite(ledPin, state);
   Serial.print("pressed") ;
   if(state==HIGH)
-    {serial.println("ON");}
+    {Serial.println("ON");}
   else
-  {serial.println("OFF");}
+  {Serial.println("OFF");}
 }
