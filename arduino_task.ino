@@ -1,4 +1,4 @@
-int sens = temp_sensor;
+int temp_sensor = A1;
 const byte ledPin = 13;
 const byte interruptPin = 2;
 volatile byte state = LOW;
